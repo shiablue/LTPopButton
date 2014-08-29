@@ -29,6 +29,15 @@
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // Initialization code
+        [self setup];
+    }
+    return self;
+}
+
 -(void)setup
 {
     CGFloat height = lineHeight;
@@ -57,8 +66,16 @@
     
 }
 
+- (void)setLineColor:(UIColor *)lineColor {
+    _lineColor = lineColor;
+    self.topLayer.backgroundColor = lineColor.CGColor;
+    self.middleLayer.backgroundColor= lineColor.CGColor;
+    self.bottomLayer.backgroundColor = lineColor.CGColor;
+}
+
 -(void) animateToType:(LTPopButtonType) type;
 {
+    self.currentType = type;
     CGPoint center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
     
     switch (type) {

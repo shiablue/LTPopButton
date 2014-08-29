@@ -18,5 +18,7 @@ typedef NS_ENUM(NSInteger, LTPopButtonType) {
 };
 
 @interface LTPopButton : UIButton
+@property (nonatomic) LTPopButtonType currentType;
+@property (nonatomic, strong) UIColor *lineColor;
 -(void) animateToType:(LTPopButtonType) type;
 @end
