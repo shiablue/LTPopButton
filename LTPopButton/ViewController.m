@@ -22,7 +22,7 @@
     
     self.button = [[LTPopButton alloc]initWithFrame:CGRectMake(100, 100, 24, 20)];
     self.button.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds)/2);
-    self.button.lineColor=[UIColor blackColor];
+    self.button.lineColor=[UIColor whiteColor];
     [self.view addSubview:self.button];
 }
 
