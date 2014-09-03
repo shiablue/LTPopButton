@@ -1,4 +1,4 @@
-# ![LTPopBotton](https://raw.githubusercontent.com/ltebean/LTPopButton/master/demo.gif)
+# ![LTPopBotton](https://raw.githubusercontent.com/ltebean/LTPopButton/master/demos.gif)
 
 ## Usage
 ```objective-c
